@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.html">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="#" method="POST">
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Enter your password" name="password" required>
+            </div>
+            <button type="submit" id="loginBtn">Login</button>
+            <div class="div mt-2">
+                <p>Donot have an account?</p>
+                <a href="signup.html">sign up</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.html">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Smart Login System</h2>
+        <form id="loginForm" action="#" method="POST">
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Enter your email" name="email">
+                <div class="alert alert-danger p-2 mt-2 d-none" id="emaillAlert"> user@example.com</div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Enter your password" name="password">
+                <div class="alert alert-danger p-2 mt-2 d-none" id="passwordAlert"> password must contain at least one
+                    digit,one lowercase letter, one uppercase letter, and one special character '@' , and be between 8
+                    and 30 characters long."</div>
+            </div>
+            <p id="allinput" class="text-danger m-3 text-center d-none">All inputs are required</p>
+
+            <!-- <p id="used" class=" text-danger m-3 text-center d-none">email already exists</p> -->
+            <!-- <button type="submit" id="loginBtn">Login</button> -->
+            <p id="incorrect" class=" text-danger m-3 text-center d-none">incorrect email or password</p>
+            <a href="home.html" class="btn" id="loginBtn">Login</a>
+            <div class="div mt-2">
+                <p>Donot have an account?</p>
+                <a href="signup.html">sign up</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

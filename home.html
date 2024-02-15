@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="login.html">
+</head>
+<body>
+    <div class="login-container">
+        <nav class="navbar navbar-expand-lg  fixed-top p-3">
+            <div class="container">
+                <!-- <a class="navbar-brand ms-auto" href="#">SMART LOGIN
+                </a> -->
+                <h4 class="navbar-brand ms-auto">SMART LOGIN</h4>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark " href="login.html" onclick="logout()">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form id="loginForm" action="#" method="POST">
+            <div id="welcomeMessage" class="text-center"></div>
+            <script>
+                // Retrieve the current user's name from localStorage
+                var currentUser = localStorage.getItem('currentUser');
+
+                // Display the welcome message with the current user's name
+                if (currentUser) {
+                    var welcomeMessage = document.getElementById('welcomeMessage');
+                    welcomeMessage.innerHTML = '<h1>Welcome ' + currentUser + '</h1>';
+                }
+            </script>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

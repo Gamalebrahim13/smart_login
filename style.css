@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #24353F;
+}
+
+.login-container {
+    background-color: #24353F;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 500px;
+    color: #fff;
+}
+
+.signup-container {
+    background-color: #24353F;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 500px;
+    /* color: #fff; */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    width: 100%;
+    background-color: transparent;
+    color: #17A2B8;
+    border-radius: 4px;
+    border: 1px solid #17A2B8;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#succed {
+    color: green;
+}
+
+.navbar {
+    background-color: #24353F;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    /* يضيف ظل بلون أسود */
+}
+
+.nav-link {
+    opacity: 0.8;
+    /* جعله شفافًا */
+    transition: opacity 0.3s;
+    /* تحويل نسيجية للتأثير */
+}
+
+.nav-link:hover {
+    opacity: 1;
+    /* عند التحويل عليه، جعله غير شفاف */
+    color: #FFA500;
+    /* تغيير لون النص عند التحويل عليه */
+}
+
+.signup-container {
+    color: #fff;
+}
+
+.signup-container h2 {
+    margin-bottom: 10px;
+    color: #17A2B8;
+}
+
+.login-container h2 {
+    margin-bottom: 10px;
+    color: #17A2B8;
+}
+
+.div a:hover {
+    text-decoration: underline;
+    /* إضافة خط تحت النص عند التحويل عليه */
+}
